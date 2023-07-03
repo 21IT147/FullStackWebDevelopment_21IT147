@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+    <div class="container">
+        <h1>
+            Different Operators in javaScript
+        </h1>
+        <input type="number" id="a">
+        <input type="number" id="b">
+        <button onClick="compute()">click</button>
+        <p id="answer"></p>
+    </div>
+    <script>
+        function compute(){
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+
+
+            let add = a+b;
+            let sub = a-b;
+            let mul = a*b;
+            let div = a/b;
+            let mdlu = a%b;
+            document.getElementById("answer").innerHTML = `addition : ${add} , subtraction : ${sub} , multiplication : ${mul} , division : ${div} , modulo : ${mdlu}`;
+        }
+    </script>
+</body>
+</html>
