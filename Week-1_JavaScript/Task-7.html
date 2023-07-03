@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Button Text</title>
+</head>
+
+<body>
+    <h1>Change Text of Button using JS</h1>
+    <button id="myButton">Click Me</button>
+
+    <script>
+        var button = document.getElementById("myButton");
+
+        button.addEventListener("click", function() {
+            button.textContent = "Button Clicked!";
+        });
+    </script>
+</body>
+
+</html>
